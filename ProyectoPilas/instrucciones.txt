@@ -1,0 +1,6 @@
+PUSH,A,0
+PUSH,B,2
+PUSH,C,1
+ADD,,3
+MUL,,4
+POP,X,5

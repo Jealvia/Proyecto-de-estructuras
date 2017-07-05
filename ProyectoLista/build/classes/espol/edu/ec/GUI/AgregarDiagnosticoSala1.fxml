@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="284.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="espol.edu.ec.GUI.AgregarDiagnosticoSala1Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="126.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="283.0" minWidth="10.0" prefWidth="283.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="185.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="344.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="344.0" minHeight="10.0" prefHeight="137.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="344.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Nombre del Paciente:" />
+      <Label text="Diagnóstico:" GridPane.rowIndex="1" />
+      <Label fx:id="nombrePaciente" text="Nombre" GridPane.columnIndex="1" />
+      <TextArea fx:id="textoDiagnostico" prefHeight="112.0" prefWidth="303.0" promptText="Escriba su Diagnóstico" GridPane.columnSpan="2147483647" GridPane.rowIndex="2" />
+      <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <Button mnemonicParsing="false" onAction="#agregarDiagnostico" text="Guardar" />
+            <Button mnemonicParsing="false" onAction="#regresarAMenuPrincipal" text="Atrás" />
+         </children>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin>
+      </HBox>
+      <Label fx:id="labelError" text="Error" GridPane.rowIndex="3" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</GridPane>

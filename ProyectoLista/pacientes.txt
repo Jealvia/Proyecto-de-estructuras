@@ -1,0 +1,68 @@
+Nombre: juan f, Apellido: laso, Genero: m, Edad: 20, Sintoma: Gripe, Prioridad: 0
+Nombre: juan f, Apellido: laso, Genero: m, Edad: 20, Sintoma: Gripe, Prioridad: 0
+Nombre: juan f, Apellido: laso, Genero: m, Edad: 20, Sintoma: Gripe, Prioridad: 0
+Cedula: 1804563052Nombre: sad, Apellido: sadsa, Genero: H, Edad: 18, Sintoma: resfrio, Prioridad: 3
+Cedula: 1804563052Nombre: sad, Apellido: sadsa, Genero: H, Edad: 18, Sintoma: resfrio, Prioridad: 3
+Cedula: 1804563052Nombre: sad, Apellido: sadsa, Genero: H, Edad: 18, Sintoma: resfrio, Prioridad: 3
+Cedula: 1804563052Nombre: sad, Apellido: sadsa, Genero: H, Edad: 18, Sintoma: resfrio, Prioridad: 3
+Cedula: 1804563052, Nombre: sadsad, Apellido: sdasd, Genero: H, Edad: 14, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1804563052, Nombre: sadsad, Apellido: sdasd, Genero: M, Edad: 14, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1804563052, Nombre: sadsad, Apellido: sdasd, Genero: M, Edad: 14, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1804563052, Nombre: sadsad, Apellido: sdasd, Genero: M, Edad: 14, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1804563052, Nombre: sadsad, Apellido: sdasd, Genero: M, Edad: 14, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1804563052, Nombre: sadsad, Apellido: sdasd, Genero: M, Edad: 14, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1804563052, Nombre: sadsad, Apellido: sdasd, Genero: M, Edad: 14, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1804563052, Nombre: sadsad, Apellido: sdasd, Genero: M, Edad: 14, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1304563052, Nombre: asdsa, Apellido: sdad, Genero: M, Edad: 77, Sintoma: hemorragia, Prioridad: 0
+Cedula: 1804563059, Nombre: sadsa, Apellido: sadsad, Genero: M, Edad: 14, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1804563059, Nombre: sdasd, Apellido: dasd, Genero: H, Edad: 18, Sintoma: fiebre, Prioridad: 0
+Cedula: 1304563052, Nombre: sdsa, Apellido: sddsa, Genero: M, Edad: 41, Sintoma: dolor de cabeza, Prioridad: 5
+Cedula: 1804563052, Nombre: sad, Apellido: dsa, Genero: M, Edad: 2, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1804563052, Nombre: sdsad, Apellido: sadas, Genero: M, Edad: 14, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1304563052, Nombre: sadsad, Apellido: sdsad, Genero: M, Edad: 41, Sintoma: dolor de cabeza, Prioridad: 5
+Cedula: 1804563052, Nombre: sdads, Apellido: sadsa, Genero: M, Edad: 23, Sintoma: congestion nasal, Prioridad: 3
+Cedula: 1804563052, Nombre: dssad, Apellido: sdasf, Genero: M, Edad: 2, Sintoma: resfrio, Prioridad: 3
+Cedula: 1304563052, Nombre: adds, Apellido: fsadfd, Genero: M, Edad: 21, Sintoma: congestion nasal, Prioridad: 3
+Cedula: 0981172459, Nombre: sdasd, Apellido: saffds, Genero: M, Edad: 56, Sintoma: congestion nasal, Prioridad: 3
+Cedula: 0123456789, Nombre: dsad, Apellido: asd, Genero: M, Edad: 12, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1804563052, Nombre: dsaads, Apellido: sdasd, Genero: M, Edad: 12, Sintoma: congestion nasal, Prioridad: 3
+Cedula: 1804563052, Nombre: FDSF, Apellido: SDFF, Genero: M, Edad: 34, Sintoma: hemorragia, Prioridad: 0
+Cedula: 1304563052, Nombre: asdsad, Apellido: asdsad, Genero: M, Edad: 3, Sintoma: hemorragia, Prioridad: 0
+Cedula: 1804563052, Nombre: dfds, Apellido: sadsd, Genero: M, Edad: 23, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1804563052, Nombre: dsffdfs, Apellido: dsccd, Genero: M, Edad: 4, Sintoma: fiebre, Prioridad: 0
+Cedula: 1804563052, Nombre: sadds, Apellido: ffsd, Genero: M, Edad: 23, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0123456789, Nombre: sadf, Apellido: dfsd, Genero: M, Edad: 423, Sintoma: fiebre, Prioridad: 0
+Cedula: 1234567890, Nombre: dfsfdfds, Apellido: df, Genero: H, Edad: 4, Sintoma: resfrio, Prioridad: 3
+Cedula: 1234567890, Nombre: dfsf, Apellido: dfsf, Genero: H, Edad: 3, Sintoma: resfrio, Prioridad: 3
+Cedula: 1233456789, Nombre: ASDAS, Apellido: FSD, Genero: M, Edad: 34, Sintoma: dolor de cabeza, Prioridad: 5
+Cedula: 1804563052, Nombre: asdas, Apellido: sadad, Genero: M, Edad: 23, Sintoma: fiebre, Prioridad: 0
+Cedula: 1804563052, Nombre: qweer, Apellido: asdd, Genero: M, Edad: 12, Sintoma: resfrio, Prioridad: 3
+Cedula: 1804563052, Nombre: dfsfsdf, Apellido: fasdf, Genero: M, Edad: 32, Sintoma: fiebre, Prioridad: 0
+Cedula: 0123456789, Nombre: sdadsa, Apellido: fdfds, Genero: M, Edad: 23, Sintoma: congestion nasal, Prioridad: 3
+Cedula: 1804563052, Nombre: sdad, Apellido: fsdfsd, Genero: M, Edad: 3, Sintoma: fiebre, Prioridad: 0
+Cedula: 1304063694, Nombre: qwerty, Apellido: das, Genero: M, Edad: 2, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1804563052, Nombre: sadsd, Apellido: sdsad, Genero: H, Edad: 23, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567890, Nombre: ass, Apellido: dss, Genero: M, Edad: 2, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1804563052, Nombre: sad, Apellido: dsad, Genero: M, Edad: 12, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1804563052, Nombre: asdsa, Apellido: fdds, Genero: H, Edad: 2, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1804563052, Nombre: asdsad, Apellido: sadads, Genero: H, Edad: 23, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1804563052, Nombre: qwe, Apellido: asd, Genero: M, Edad: 23, Sintoma: fiebre, Prioridad: 0
+Cedula: 1804563052, Nombre: da, Apellido: sad, Genero: H, Edad: 23, Sintoma: resfrio, Prioridad: 3
+Cedula: 1234567890, Nombre: asdasd, Apellido: df, Genero: H, Edad: 3, Sintoma: dolor de cabeza, Prioridad: 5
+Cedula: 1234567890, Nombre: asddd, Apellido: dsf, Genero: M, Edad: 12, Sintoma: fiebre, Prioridad: 0
+Cedula: 1234567890, Nombre: ultimo, Apellido: ads, Genero: H, Edad: 23, Sintoma: dolor de cabeza, Prioridad: 5
+Cedula: 1234564890, Nombre: primero, Apellido: sad, Genero: H, Edad: 34, Sintoma: fiebre, Prioridad: 0
+Cedula: 1234567890, Nombre: ultimo, Apellido: sfd, Genero: M, Edad: 12, Sintoma: dolor de cabeza, Prioridad: 5
+Cedula: 0123456789, Nombre: primero, Apellido: ads, Genero: H, Edad: 43, Sintoma: fiebre, Prioridad: 0
+Cedula: 1234567890, Nombre: ultimo, Apellido: asd, Genero: H, Edad: 2, Sintoma: dolor de cabeza, Prioridad: 5
+Cedula: 0123456789, Nombre: medio, Apellido: sad, Genero: H, Edad: 3, Sintoma: resfrio, Prioridad: 3
+Cedula: 1804563052, Nombre: sda, Apellido: das, Genero: M, Edad: 23, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567890, Nombre: ultimo, Apellido: sad, Genero: H, Edad: 3, Sintoma: dolor de cabeza, Prioridad: 5
+Cedula: 1804563052, Nombre: primero, Apellido: sad, Genero: M, Edad: 3, Sintoma: fiebre, Prioridad: 0
+Cedula: 1234567890, Nombre: asd, Apellido: sd, Genero: H, Edad: 2, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567890, Nombre: asd, Apellido: wqe, Genero: H, Edad: 12, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567890, Nombre: sdf, Apellido: df, Genero: H, Edad: 23, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567890, Nombre: primero, Apellido: sad, Genero: M, Edad: 2, Sintoma: fiebre, Prioridad: 0
+Cedula: 1804563052, Nombre: Ultimo, Apellido: asd, Genero: M, Edad: 12, Sintoma: dolor de cabeza, Prioridad: 5
+Cedula: 1804563052, Nombre: asd, Apellido: sad, Genero: M, Edad: 324, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0925682551, Nombre: mnbvc , Apellido: mbnv dfgfg, Genero: H, Edad: 12, Sintoma: fiebre, Prioridad: 0

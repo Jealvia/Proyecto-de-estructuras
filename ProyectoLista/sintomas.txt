@@ -1,0 +1,6 @@
+﻿vomito|1
+fiebre|0
+resfrio|3
+congestion nasal|3
+hemorragia|0
+dolor de cabeza|5

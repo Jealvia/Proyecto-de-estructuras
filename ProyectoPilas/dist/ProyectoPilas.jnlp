@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ProyectoPilas.jnlp">
+  <information>
+    <title>ProyectoPilas</title>
+    <vendor>Julio Alvia</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ProyectoPilas.jar" size="17025" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ProyectoPilas" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="proyectopilas.ProyectoPilas"  name="ProyectoPilas" />
+  <update check="always"/>
+</jnlp>
