@@ -24,6 +24,7 @@ import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 import javafx.stage.Stage;
@@ -34,11 +35,14 @@ import javafx.stage.Stage;
  * @author Julio Alvia
  */
 public class PaginaPrincipalController implements Initializable {
+    
+    private Label t1 = new Label();
+    private Label t2 = new Label();
 
     @FXML 
-    private  Label turno1=new Label();
+    private  Label turno1 = new Label();
     @FXML 
-    private  Label turno2=new Label();
+    private  Label turno2 = new Label();
     @FXML 
     private  Label sala1_lbl=new Label();
     @FXML 
@@ -53,6 +57,10 @@ public class PaginaPrincipalController implements Initializable {
     private Button sala2;
     @FXML 
     private GridPane pane;
+    @FXML
+    private VBox box1;
+    @FXML
+    private VBox box2;
     private static MediaPlayer mediaPlayerActual;
     private static MediaPlayer nextPlayer;
     private static MediaPlayer playerActual;
@@ -122,14 +130,19 @@ public class PaginaPrincipalController implements Initializable {
     
     //SE ENCARGA DE LOS TURNOS
     public void modificarTurnos() {
+        Label turno = new Label("Turno");
+        Label sala = new Label("Sala");
+        box1.getChildren().add(0, turno);
+        box2.getChildren().add(0, sala);
         if (PaginaPrincipalController.consultorio.getColaPacientes().isEmpty()) {
             
         } else if(PaginaPrincipalController.consultorio.getColaPacientes().size() == 1){
             //Label lbl=new Label(PaginaPrincipalController.consultorio.getColaPacientes().peek().getTurno());
-            if(consultorio.getColaPacientes().peek().getTurno() != null) {
+            if (consultorio.getColaPacientes().peek() != null) {
                 System.out.println("NO ES NULL");
             }
-            turno1.setText(PaginaPrincipalController.consultorio.getColaPacientes().peek().getTurno());
+            t1.setText(consultorio.getColaPacientes().peek().getTurno());
+            box1.getChildren().add(1,t1);
             
             //pane.getChildren().add(lbl);//add(lbl, 0, 1);
             //pane_abajo.getChildren().add(pane);

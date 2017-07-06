@@ -59,6 +59,7 @@ public class FXMLEjecutarController implements Initializable {
         lbl.setAlignment(Pos.CENTER);
         Operaciones op = Operaciones.operaciones.poll();
         if (op != null) {
+            int ban = 0;
             instruccion.setText(op.getInstruccion().getValue());
             switch (op.getInstruccion().getValue()) {
                 case "PUSH":
@@ -77,47 +78,77 @@ public class FXMLEjecutarController implements Initializable {
                     Util.writeMemoria(FXMLModificarController.lista_memoria);
                     break;
                 case "ADD":
-                    Integer num1 = pila.pop();
-                    Integer num2 = pila.pop();
-                    Integer num3 = num1 + num2;
-                    pila.push(num3);
-                    pilaGUI.getChildren().remove(0);
-                    pilaGUI.getChildren().remove(0);
-                    lbl.setText(num3.toString());
-                    pilaGUI.getChildren().add(0, lbl);
+                    if (pila.size() > 1) {
+                        Integer num1 = pila.pop();
+                        Integer num2 = pila.pop();
+                        Integer num3 = num1 + num2;
+                        pila.push(num3);
+                        pilaGUI.getChildren().remove(0);
+                        pilaGUI.getChildren().remove(0);
+                        lbl.setText(num3.toString());
+                        pilaGUI.getChildren().add(0, lbl);
+                    } else {
+                        ban = 1;
+                    }
                     break;
                 case "MUL":
-                    Integer num4 = pila.pop();
-                    Integer num5 = pila.pop();
-                    Integer num6 = num4 * num5;
-                    pila.push(num6);
-                    pilaGUI.getChildren().remove(0);
-                    pilaGUI.getChildren().remove(0);
-                    lbl.setText(num6.toString());
-                    pilaGUI.getChildren().add(0, lbl);
+                    if (pila.size() > 1) {
+                        Integer num4 = pila.pop();
+                        Integer num5 = pila.pop();
+                        Integer num6 = num4 * num5;
+                        pila.push(num6);
+                        pilaGUI.getChildren().remove(0);
+                        pilaGUI.getChildren().remove(0);
+                        lbl.setText(num6.toString());
+                        pilaGUI.getChildren().add(0, lbl);
+                    } else {
+                        ban = 1;
+                    }
                     break;
                 case "DIV":
-                    Integer num7 = pila.pop();
-                    Integer num8 = pila.pop();
-                    Integer num9 = num7 / num8;
-                    pila.push(num9);
-                    pilaGUI.getChildren().remove(0);
-                    pilaGUI.getChildren().remove(0);
-                    lbl.setText(num9.toString());
-                    pilaGUI.getChildren().add(0, lbl);
+                    if (pila.size() > 1) {
+                        Integer num7 = pila.pop();
+                        Integer num8 = pila.pop();
+                        if (!(num8 == 0)) {
+                            Integer num9 = num7 / num8;
+                            pila.push(num9);
+                            pilaGUI.getChildren().remove(0);
+                            pilaGUI.getChildren().remove(0);
+                            lbl.setText(num9.toString());
+                            pilaGUI.getChildren().add(0, lbl);
+                        } else {
+                            ban = 2;
+                        }
+                    } else {
+                        ban = 1;
+                    }
                     break;
                 case "SUB":
-                    Integer num10 = pila.pop();
-                    Integer num11 = pila.pop();
-                    Integer num12 = num10 - num11;
-                    pila.push(num12);
-                    pilaGUI.getChildren().remove(0);
-                    pilaGUI.getChildren().remove(0);
-                    lbl.setText(num12.toString());
-                    pilaGUI.getChildren().add(0, lbl);
+                    if (pila.size() > 1) {
+                        Integer num10 = pila.pop();
+                        Integer num11 = pila.pop();
+                        Integer num12 = num10 - num11;
+                        pila.push(num12);
+                        pilaGUI.getChildren().remove(0);
+                        pilaGUI.getChildren().remove(0);
+                        lbl.setText(num12.toString());
+                        pilaGUI.getChildren().add(0, lbl);
+                    } else {
+                        ban = 1;
+                    }
                     break;
             }
-            warning1.setText("Succes!");
+            switch (ban) {
+                case 0:
+                    warning1.setText("Succes!");
+                    break;
+                case 1:
+                    warning1.setText("Error: mínimo dos números.");
+                    break;
+                default:
+                    warning1.setText("Error: división entre 0.");
+                    break;
+            }
         } else {
             System.out.println("Ya no hay más operaciones");
             warning1.setText("No hay más instrucciones.");

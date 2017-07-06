@@ -59,23 +59,8 @@ public class FXMLModificarController implements Initializable {
 
     @FXML
     private void ingresoMemoria(ActionEvent event) {
-        if (direccion.getText().isEmpty() && valor.getText().isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Campos incompletos");
-            alert.setContentText("Falta la direccion y el valor");
-            alert.show();
-        } else if (direccion.getText().isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Campos incompletos");
-            alert.setContentText("Falta la direccion");
-            alert.show();
-        } else if (valor.getText().isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Campos incompletos");
-            alert.setContentText("Falta el valor");
-            alert.show();
-        } else {
-            Memoria memoria = new Memoria(direccion.getText(), parseInt(valor.getText()));
+        if(verificarDatos()) {
+            Memoria memoria = new Memoria(direccion.getText().toUpperCase(), parseInt(valor.getText()));
             lista_memoria.add(memoria);
             Util.writeMemoria(lista_memoria);
 
@@ -84,23 +69,8 @@ public class FXMLModificarController implements Initializable {
 
     @FXML
     private void modificarMemoria(ActionEvent event) {
-        if (direccion.getText().isEmpty() && valor.getText().isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Campos incompletos");
-            alert.setContentText("Falta la direccion y el valor");
-            alert.show();
-        } else if (direccion.getText().isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Campos incompletos");
-            alert.setContentText("Falta la direccion");
-            alert.show();
-        } else if (valor.getText().isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Campos incompletos");
-            alert.setContentText("Falta el valor");
-            alert.show();
-        } else {
-            Memoria memoria = new Memoria(direccion.getText(), parseInt(valor.getText()));
+        if(verificarDatos()) {
+            Memoria memoria = new Memoria(direccion.getText().toUpperCase(), parseInt(valor.getText()));
             int selectedIndex = tablaMemoria.getSelectionModel().getSelectedIndex();
 
             lista_memoria.set(selectedIndex, memoria);
@@ -110,11 +80,20 @@ public class FXMLModificarController implements Initializable {
 
     @FXML
     private void eliminarMemoria(ActionEvent event) {
-        int selectedIndex = tablaMemoria.getSelectionModel().getSelectedIndex();
-        tablaMemoria.getItems().remove(selectedIndex);
-        System.out.println(selectedIndex);
-        lista_memoria.remove(tablaMemoria.getSelectionModel());
-        Util.writeMemoria(lista_memoria);
+        try
+        {
+            int selectedIndex = tablaMemoria.getSelectionModel().getSelectedIndex();
+            tablaMemoria.getItems().remove(selectedIndex);
+            System.out.println(selectedIndex);
+            lista_memoria.remove(tablaMemoria.getSelectionModel());
+            Util.writeMemoria(lista_memoria);
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Fila no seleccionada");
+            alert.setContentText("Seleccione una fila e intente de nuevo");
+            alert.show();
+        }
     }
 
     @FXML
@@ -149,6 +128,63 @@ public class FXMLModificarController implements Initializable {
         this.lista_memoria = tmp.llenarMemoria();
         tablaMemoria.setItems(this.lista_memoria);
 
+    }
+    
+    private boolean verificarDatos()
+    {
+        try
+        {
+            Integer.parseInt(valor.getText());
+        }
+        catch(NumberFormatException e){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Campo incorrecto");
+            alert.setContentText("El valor debe ser un entero");
+            alert.show();
+            return false;
+        }
+        
+        if ((direccion.getText() == null ||direccion.getText().trim().isEmpty()) 
+                && (valor.getText() == null || valor.getText().trim().isEmpty())) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Campos incompletos");
+            alert.setContentText("Falta la direccion y el valor");
+            alert.show();
+            return false;
+        }if (direccion.getText() == null || direccion.getText().trim().isEmpty()) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Campos incompletos");
+            alert.setContentText("Falta la direccion");
+            alert.show();
+            return false;
+        }if (valor.getText() == null || valor.getText().trim().isEmpty()) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Campos incompletos");
+            alert.setContentText("Falta el valor");
+            alert.show();
+            return false;
+        }
+        if(direccion.getText().length()>1){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Campo incorrecto");
+            alert.setContentText("La dirrecion de memoria debe ser una letra (A-Z)");
+            alert.show();
+            return false;
+        }
+        if(!isAlpha(direccion.getText()))
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Campo incorrecto");
+            alert.setContentText("La dirrecion de memoria debe ser una letra (A-Z)");
+            alert.show();
+            return false;
+        }
+        return true;
+    }
+    
+    private boolean isAlpha(String palabra)
+    {
+        return (palabra.length()>0 && "ABCDEFGHIJKLMNOPQRSTUVWXYZ".contains(palabra));
     }
 
     @Override

@@ -65,29 +65,16 @@ public class FXMLModificarInstruccionesController implements Initializable {
     }
     
     @FXML private void inst_insertar(ActionEvent event) throws IOException {
-        if(operando.getText().isEmpty()||prioridad.getText().isEmpty()||instruccion.getSelectionModel().getSelectedItem().toString().isEmpty()){
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Campos incompletos");
-            alert.setContentText("Faltan todos los campos");
-            alert.show();
-        
-        }else{
-                Operaciones op = new Operaciones(instruccion.getValue().toString(),operando.getText(),parseInt(prioridad.getText()));
-                lista_operaciones.add(op);
-                Util.writeInstrucciones(lista_operaciones);
-                
+        if(verificarDatos())
+        {
+            Operaciones op = new Operaciones(instruccion.getValue().toString(),operando.getText().toUpperCase(),parseInt(prioridad.getText()));
+            lista_operaciones.add(op);
+            Util.writeInstrucciones(lista_operaciones);
         }
     }
     
     @FXML private void inst_modificar(ActionEvent event) throws IOException {
-        if(operando.getText().isEmpty()||prioridad.getText().isEmpty()||instruccion.getSelectionModel().getSelectedItem().toString().isEmpty()){
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Campos incompletos");
-            alert.setContentText("Faltan llenar campos");
-            alert.show();
-        
-        }else{
-        
+        if(verificarDatos()){
             Operaciones op = new Operaciones(instruccion.getValue().toString(),operando.getText(),parseInt(prioridad.getText()));
             int selectedIndex = tablaInstrucciones.getSelectionModel().getSelectedIndex();
 
@@ -97,11 +84,21 @@ public class FXMLModificarInstruccionesController implements Initializable {
     }
     
     @FXML private void inst_eliminar(ActionEvent event) {
-        int selectedIndex = tablaInstrucciones.getSelectionModel().getSelectedIndex();
-        tablaInstrucciones.getItems().remove(selectedIndex);
-        System.out.println(selectedIndex);
-        lista_operaciones.remove(tablaInstrucciones.getSelectionModel());
-        Util.writeInstrucciones(lista_operaciones);
+        try
+        {
+            int selectedIndex = tablaInstrucciones.getSelectionModel().getSelectedIndex();
+            tablaInstrucciones.getItems().remove(selectedIndex);
+            System.out.println(selectedIndex);
+            lista_operaciones.remove(tablaInstrucciones.getSelectionModel());
+            Util.writeInstrucciones(lista_operaciones);  
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Fila no seleccionada");
+            alert.setContentText("Seleccione la fila a eliminar");
+            alert.show();
+        }
+        
     }
     
     
@@ -130,6 +127,78 @@ public class FXMLModificarInstruccionesController implements Initializable {
 
     }
     
+    private boolean verificarDatos()
+    {
+        try
+        {
+            Integer.parseInt(prioridad.getText());
+        }
+        catch(NumberFormatException e)
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Campo incorrecto");
+            alert.setContentText("La prioridad debe ser un entero positivo");
+            alert.show();
+            return false;
+        }
+        if((operando.getText() == null ||operando.getText().trim().isEmpty()) && (("PUSH".equals(instruccion.getSelectionModel().getSelectedItem().toString()))
+                || ("POP".equals(instruccion.getSelectionModel().getSelectedItem().toString())))&&
+                (prioridad.getText() == null ||prioridad.getText().trim().isEmpty())&&
+                instruccion.getSelectionModel().getSelectedItem().toString().isEmpty()){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Campos incompletos");
+            alert.setContentText("Faltan todos los campos");
+            alert.show();
+            return false;
+        
+        }
+        if((operando.getText().length()>1) && (("PUSH".equals(instruccion.getSelectionModel().getSelectedItem().toString()))
+                || ("POP".equals(instruccion.getSelectionModel().getSelectedItem().toString()))))
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Campo incorrecto");
+            alert.setContentText("El operando debe ser una letra de la A a la Z");
+            alert.show();
+            return false;
+        }
+        if((!isAlpha(operando.getText())) && (("PUSH".equals(instruccion.getSelectionModel().getSelectedItem().toString()))
+                || ("POP".equals(instruccion.getSelectionModel().getSelectedItem().toString()))))
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Campo incorrecto");
+            alert.setContentText("El operando debe ser una letra de la A a la Z");
+            alert.show();
+            return false;
+        }
+        if(("PUSH".equals(instruccion.getSelectionModel().getSelectedItem().toString())||
+                "POP".equals(instruccion.getSelectionModel().getSelectedItem().toString()))&&
+                operando.getText().isEmpty())
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Campos incompletos");
+            alert.setContentText("Ingresar un operando");
+            alert.show();
+            return false;
+        }
+        if(("ADD".equals(instruccion.getSelectionModel().getSelectedItem().toString())||
+                "SUB".equals(instruccion.getSelectionModel().getSelectedItem().toString())||
+                "MUL".equals(instruccion.getSelectionModel().getSelectedItem().toString())||
+                "DIV".equals(instruccion.getSelectionModel().getSelectedItem().toString()))&&
+                !operando.getText().isEmpty())
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Campo incorrecto");
+            alert.setContentText("No se deben ingresar operandos con esta instruccion");
+            alert.show();
+            return false;
+        }
+        return true;
+    }
+    
+        private boolean isAlpha(String palabra)
+    {
+        return (palabra.length()>0 && "ABCDEFGHIJKLMNOPQRSTUVWXYZ".contains(palabra));
+    }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
