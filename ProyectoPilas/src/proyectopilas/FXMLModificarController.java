@@ -55,7 +55,7 @@ public class FXMLModificarController implements Initializable {
     @FXML
     private TableColumn<Memoria, Integer> col_valor;
 
-    private ObservableList<Memoria> lista_memoria = FXCollections.observableArrayList();
+    public static ObservableList<Memoria> lista_memoria = FXCollections.observableArrayList();
 
     @FXML
     private void ingresoMemoria(ActionEvent event) {

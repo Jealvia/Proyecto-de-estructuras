@@ -5,6 +5,7 @@
  */
 package proyectopilas;
 
+import Model.Memoria;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.Stack;
@@ -14,9 +15,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import Model.Operaciones;
+import Persistencia.Util;
 import java.io.IOException;
-import java.util.ListIterator;
-import java.util.PriorityQueue;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -39,14 +39,61 @@ public class FXMLEjecutarController implements Initializable {
     private Button siguiente;
     @FXML
     private VBox pilaGUI;
-    private int cont = 0;
+    @FXML
+    private Label warning1;
+    @FXML
+    private Label instruccion;
+    private Stack<Integer> pila = new Stack<>();
+    private String abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     
     public void siguienteOp (ActionEvent event) {
         System.out.println("Siguiente");
-        cont++;
-        Label lbl = new Label("Prueba" + Integer.toString(cont));
-        pilaGUI.getChildren().add(0, lbl);
-        
+        Label lbl = new Label();
+        Operaciones op = Operaciones.operaciones.poll();
+        if (op != null) {
+            instruccion.setText(op.getInstruccion().getValue());
+            switch (op.getInstruccion().getValue()) {
+                case "PUSH":
+                    pila.push(Memoria.memoria.get(op.getOperando().getValue()));
+                    String s = Memoria.memoria.get(op.getOperando().getValue()).toString();
+                    lbl.setText(s);
+                    pilaGUI.getChildren().add(0, lbl);
+                    break;
+                case "POP":
+                    Integer valor = pila.pop();
+                    Memoria.memoria.put(op.getOperando().getValue(), valor);
+                    pilaGUI.getChildren().remove(0);
+                    Memoria me = new Memoria(op.getOperando().getValue(), valor);
+                    int index = abc.indexOf(op.getOperando().getValue());
+                    FXMLModificarController.lista_memoria.set(index, me);
+                    Util.writeMemoria(FXMLModificarController.lista_memoria);
+                    break;
+                case "ADD":
+                    Integer num1 = pila.pop();
+                    Integer num2 = pila.pop();
+                    Integer num3 = num1 + num2;
+                    pila.push(num3);
+                    pilaGUI.getChildren().remove(0);
+                    pilaGUI.getChildren().remove(0);
+                    lbl.setText(num3.toString());
+                    pilaGUI.getChildren().add(0, lbl);
+                    break;
+                case "MUL":
+                    Integer num4 = pila.pop();
+                    Integer num5 = pila.pop();
+                    Integer num6 = num4 * num5;
+                    pila.push(num6);
+                    pilaGUI.getChildren().remove(0);
+                    pilaGUI.getChildren().remove(0);
+                    lbl.setText(num6.toString());
+                    pilaGUI.getChildren().add(0, lbl);
+                    break;
+            }
+            warning1.setText("Succes!");
+        } else {
+            System.out.println("Ya no hay más operaciones");
+            warning1.setText("No hay más instrucciones.");
+        }
         
         
     }

@@ -36,7 +36,6 @@ public class ProyectoPilas extends Application {
     public static void main(String[] args) {
         Operaciones.loadingOp();
         Memoria.loadMemory();
-        System.out.println(Memoria.memoria);
         launch(args);
     }
     

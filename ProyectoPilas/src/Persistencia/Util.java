@@ -53,9 +53,9 @@ public class Util {
 
             pw.close();
         } catch (FileNotFoundException ex) {
-            System.out.println("el archivo memoria.txt no existe");
+            System.out.println("El archivo memoria.txt no existe");
         } catch (IOException ex) {
-            System.out.println("se produjo error al escribir memoria.txt");
+            System.out.println("Se produjo error al escribir memoria.txt");
         }
     }
 
