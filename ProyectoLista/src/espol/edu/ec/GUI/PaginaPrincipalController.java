@@ -111,7 +111,7 @@ public class PaginaPrincipalController implements Initializable {
         }
     }
     
-    //ESTE METODO DEBE AGRAGAR UN LABEL CON EL TURNO AL GRID PANE
+    //SE ENCARGA DE LOS TURNOS
     public void modificarTurnos() {
         if (PaginaPrincipalController.consultorio.getColaPacientes().isEmpty()) {
             

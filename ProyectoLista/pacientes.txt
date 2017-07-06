@@ -129,3 +129,5 @@ Cedula: 1234567890, Nombre: ddgfg dfgdfg, Apellido:  fgdfgd dfgdfg, Genero: H, E
 Cedula: 1234567890, Nombre:  sdsdfsdf sdfsdf, Apellido: sdfdsf dsfsdf, Genero: M, Edad: 56, Sintoma: ﻿vomito, Prioridad: 1
 Cedula: 1234567890, Nombre: sdfsdf dsfsdf, Apellido: sd fs sdfsdf, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
 Cedula: 1234567890, Nombre: dfdfgdfg fdgdfg, Apellido:  dfgdfgdfg dfgdfg, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567890, Nombre: fgdg dfgdfg, Apellido: fdgdfg fdgdfg, Genero: M, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567890, Nombre: SDFDF DSFSDF, Apellido: SDFSD SDFSD, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
