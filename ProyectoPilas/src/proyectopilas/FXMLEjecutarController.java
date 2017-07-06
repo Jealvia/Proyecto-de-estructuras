@@ -106,6 +106,16 @@ public class FXMLEjecutarController implements Initializable {
                     lbl.setText(num9.toString());
                     pilaGUI.getChildren().add(0, lbl);
                     break;
+                case "SUB":
+                    Integer num10 = pila.pop();
+                    Integer num11 = pila.pop();
+                    Integer num12 = num10 - num11;
+                    pila.push(num12);
+                    pilaGUI.getChildren().remove(0);
+                    pilaGUI.getChildren().remove(0);
+                    lbl.setText(num12.toString());
+                    pilaGUI.getChildren().add(0, lbl);
+                    break;
             }
             warning1.setText("Succes!");
         } else {
