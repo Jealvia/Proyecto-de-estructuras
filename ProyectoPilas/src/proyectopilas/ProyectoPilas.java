@@ -5,11 +5,13 @@
  */
 package proyectopilas;
 
+import Model.Memoria;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import Model.Operaciones;
 
 /**
  *
@@ -32,6 +34,9 @@ public class ProyectoPilas extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Operaciones.loadingOp();
+        Memoria.loadMemory();
+        System.out.println(Memoria.memoria);
         launch(args);
     }
     

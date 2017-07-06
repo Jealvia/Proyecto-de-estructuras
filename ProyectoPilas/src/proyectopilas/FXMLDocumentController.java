@@ -28,7 +28,7 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private void modificarMemoria(ActionEvent event) throws IOException {
-        System.out.println("You clicked me!");
+        System.out.println("Modificar Archivo de Memoria");
         
         ((Node)(event.getSource())).getScene().getWindow().hide();
         Parent root = FXMLLoader.load(getClass().getResource("FXMLModificar.fxml"));
@@ -41,7 +41,7 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private void modificarInstrucciones(ActionEvent event) throws IOException {
-        System.out.println("You me!");
+        System.out.println("Modificar Instrucciones");
         ((Node)(event.getSource())).getScene().getWindow().hide();
         Parent root = FXMLLoader.load(getClass().getResource("FXMLModificarInstrucciones.fxml"));
         Stage stage=new Stage(); 
@@ -52,8 +52,15 @@ public class FXMLDocumentController implements Initializable {
     }
     
     @FXML
-    private void ejecutar(ActionEvent event) {
-        System.out.println("You clicked!");
+    private void ejecutar(ActionEvent event) throws IOException {
+        System.out.println("Ejecutar");
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+        Parent root = FXMLLoader.load(getClass().getResource("FXMLEjecutar.fxml"));
+        Stage stage=new Stage(); 
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Ejecutar");
+        stage.show();
     }
     
     @Override

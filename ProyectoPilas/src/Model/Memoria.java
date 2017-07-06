@@ -9,6 +9,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import static java.lang.Integer.parseInt;
+import java.util.HashMap;
+import java.util.ListIterator;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -25,6 +27,7 @@ public class Memoria {
     public  StringProperty direccion_memoria ;
     public  IntegerProperty valor;
     private ObservableList<Memoria> lista_memoria=FXCollections.observableArrayList();
+    public static HashMap<String, Integer> memoria;
 
     Memoria(String instruccion, String operando, int val) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -66,6 +69,10 @@ public class Memoria {
     public void setValor(IntegerProperty valor) {
         this.valor = valor;
     }
+    
+    public String getDireccionString() {
+        return direccion_memoria.getValue();
+    }
 
     
 
@@ -93,6 +100,18 @@ public class Memoria {
         } catch (IOException e) {
         }
         return this.lista_memoria;
+    }
+    
+    public static void loadMemory() {
+        memoria = new HashMap<>();
+        Memoria me = new Memoria();
+        ObservableList<Memoria> lMe = me.llenarMemoria();
+        ListIterator<Memoria> li = lMe.listIterator();
+        
+        while (li.hasNext()) {
+            Memoria m = li.next();
+            memoria.put(m.getDireccionString(), m.getIntValor());
+        }
     }
     
     

@@ -60,7 +60,7 @@ public class FXMLModificarInstruccionesController implements Initializable {
         Stage stage=new Stage(); 
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("Modificar Archivo de Instrucciones");
+        stage.setTitle("Proyecto Pilas");
         stage.show();
     }
     
