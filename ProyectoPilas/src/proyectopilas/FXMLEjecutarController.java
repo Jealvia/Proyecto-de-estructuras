@@ -96,6 +96,16 @@ public class FXMLEjecutarController implements Initializable {
                     lbl.setText(num6.toString());
                     pilaGUI.getChildren().add(0, lbl);
                     break;
+                case "DIV":
+                    Integer num7 = pila.pop();
+                    Integer num8 = pila.pop();
+                    Integer num9 = num7 / num8;
+                    pila.push(num9);
+                    pilaGUI.getChildren().remove(0);
+                    pilaGUI.getChildren().remove(0);
+                    lbl.setText(num9.toString());
+                    pilaGUI.getChildren().add(0, lbl);
+                    break;
             }
             warning1.setText("Succes!");
         } else {
