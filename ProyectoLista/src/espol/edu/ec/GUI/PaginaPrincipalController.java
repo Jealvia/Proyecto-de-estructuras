@@ -183,7 +183,6 @@ public class PaginaPrincipalController implements Initializable {
         //SI QUIERES QUE EL VIDEO SE REPRODUSCA QUITA EL COMENTARIO DE ABAJO Y PON EN LA CARPETA SRC EL MEDIA
         //QUE ENVIO JUAN
         //inicializar();
-        
     }
     
     public  Label getSala1_lbl() {
