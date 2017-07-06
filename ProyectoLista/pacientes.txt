@@ -144,3 +144,10 @@ Cedula: 1010101010, Nombre: adad, Apellido: awdawd, Genero: H, Edad: 45, Sintoma
 Cedula: 0930432372, Nombre: adadwdwd, Apellido: adwdwadw, Genero: H, Edad: 20, Sintoma: ﻿vomito, Prioridad: 1
 Cedula: 0922456321, Nombre: adadwda, Apellido: adwdadaw, Genero: H, Edad: 30, Sintoma: ﻿vomito, Prioridad: 1
 Cedula: 0930432372, Nombre: adawd, Apellido: adawdada, Genero: H, Edad: 20, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0930432372, Nombre: adadw, Apellido: awdawdwada, Genero: H, Edad: 20, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0900235642, Nombre: adawdw, Apellido: gggggggseeeee, Genero: H, Edad: 20, Sintoma: resfrio, Prioridad: 3
+Cedula: 0930432372, Nombre: adawdwd, Apellido: afawfwafwf, Genero: H, Edad: 35, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0930432372, Nombre: dawdwd, Apellido: efefef, Genero: H, Edad: 20, Sintoma: fiebre, Prioridad: 0
+Cedula: 0930432372, Nombre: sefessfsg, Apellido: sfheffef, Genero: H, Edad: 20, Sintoma: resfrio, Prioridad: 3
+Cedula: 0930432372, Nombre: adawdwadf, Apellido: wfwafwf, Genero: H, Edad: 20, Sintoma: resfrio, Prioridad: 3
+Cedula: 0930432372, Nombre: adawd, Apellido: fffffffff, Genero: H, Edad: 20, Sintoma: fiebre, Prioridad: 0

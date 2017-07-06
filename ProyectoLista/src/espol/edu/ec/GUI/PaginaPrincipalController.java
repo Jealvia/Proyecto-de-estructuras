@@ -36,9 +36,9 @@ import javafx.stage.Stage;
 public class PaginaPrincipalController implements Initializable {
 
     @FXML 
-    private  Label turno1; //=new Label();
+    private  Label turno1=new Label();
     @FXML 
-    private  Label turno2; //=new Label();
+    private  Label turno2=new Label();
     @FXML 
     private  Label sala1_lbl=new Label();
     @FXML 
@@ -126,7 +126,7 @@ public class PaginaPrincipalController implements Initializable {
             
         } else if(PaginaPrincipalController.consultorio.getColaPacientes().size() == 1){
             //Label lbl=new Label(PaginaPrincipalController.consultorio.getColaPacientes().peek().getTurno());
-            if(consultorio.getColaPacientes().peek() != null) {
+            if(consultorio.getColaPacientes().peek().getTurno() != null) {
                 System.out.println("NO ES NULL");
             }
             turno1.setText(PaginaPrincipalController.consultorio.getColaPacientes().peek().getTurno());
