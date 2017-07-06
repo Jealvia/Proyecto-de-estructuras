@@ -137,3 +137,10 @@ Cedula: 0930432372, Nombre: asd, Apellido: ada, Genero: H, Edad: 20, Sintoma: �
 Cedula: 1010101010, Nombre: addawd, Apellido: adwdad, Genero: H, Edad: 20, Sintoma: ﻿vomito, Prioridad: 1
 Cedula: 1234567890, Nombre: fgdg dfgdfg, Apellido: fdgdfg fdgdfg, Genero: M, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
 Cedula: 1234567890, Nombre: SDFDF DSFSDF, Apellido: SDFSD SDFSD, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0930432372, Nombre: k, Apellido: v, Genero: H, Edad: 20, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1010101010, Nombre: adawdwd, Apellido: ffwafwafwfaf, Genero: H, Edad: 20, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0930432372, Nombre: k, Apellido: v, Genero: H, Edad: 20, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1010101010, Nombre: adad, Apellido: awdawd, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0930432372, Nombre: adadwdwd, Apellido: adwdwadw, Genero: H, Edad: 20, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0922456321, Nombre: adadwda, Apellido: adwdadaw, Genero: H, Edad: 30, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0930432372, Nombre: adawd, Apellido: adawdada, Genero: H, Edad: 20, Sintoma: ﻿vomito, Prioridad: 1

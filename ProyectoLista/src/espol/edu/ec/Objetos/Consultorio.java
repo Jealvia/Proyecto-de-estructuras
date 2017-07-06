@@ -24,7 +24,7 @@ public class Consultorio {
     }
 
     public void agregarPaciente(Paciente paciente) {
-        this.colaPacientes.add(paciente);
+        this.colaPacientes.offer(paciente);
     }
 
     public PriorityQueue<Paciente> getColaPacientes() {
