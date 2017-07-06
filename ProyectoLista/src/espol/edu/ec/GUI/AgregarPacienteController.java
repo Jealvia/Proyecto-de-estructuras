@@ -8,7 +8,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -19,11 +18,14 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.LinkedList;
 import java.util.ResourceBundle;
+import javafx.scene.Scene;
+import javafx.scene.layout.GridPane;
 
 /**
  * Created by User on 02/07/2017.
  */
 public class AgregarPacienteController implements Initializable {
+    //Atributos FXML
     @FXML private TextField textoCedula;
     @FXML private TextField textoNombre;
     @FXML private TextField textoApellido;
@@ -31,57 +33,64 @@ public class AgregarPacienteController implements Initializable {
     @FXML private ChoiceBox<String> choiceGenero;
     @FXML private ChoiceBox<Sintoma> choiceSintoma;
     @FXML private Label labelError;
+    @FXML private GridPane pane;
+    //Atributos normales
     private LinkedList<Sintoma> listaSintomas;
     private Integer edad;
+    private int turn=0;
+    private static Stage stage1=new Stage();
 
+    
+    
+    
     @FXML
     public void regresarAMenuPrincipal(ActionEvent event) throws IOException
     {
         ((Node)(event.getSource())).getScene().getWindow().hide();
-        Parent root = FXMLLoader.load(getClass().getResource("MenuPrincipal.fxml"));
+        AgregarPacienteController.stage1.close();
+        
+        /**Parent root = FXMLLoader.load(getClass().getResource("PaginaPrincipal.fxml"));
+        
         Stage stage=new Stage();
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("Menu Principal");
-        stage.show();
-
+        stage.show();*/
+        
     }
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        listaSintomas = Sintoma.readFromFile("sintomas.txt");
-        for(Sintoma sintoma : listaSintomas)
-        {
-            this.choiceSintoma.getItems().add(sintoma);
-        }
-        this.choiceGenero.getItems().addAll("H", "M");
-        labelError.setVisible(false);
-        labelError.setTextFill(Color.RED);
-    }
+    
     @FXML
     public void guardarPaciente(ActionEvent event) throws IOException {
-        if(this.comprobarDatos())
-        {
+        if (this.comprobarDatos()) {
+            PaginaPrincipalController temporal = new PaginaPrincipalController();
             labelError.setVisible(false);
-            Paciente paciente = new Paciente(textoCedula.getText(), textoNombre.getText(),textoApellido.getText(),
+            Paciente paciente = new Paciente(textoCedula.getText(), textoNombre.getText(), textoApellido.getText(),
                     choiceGenero.getValue().charAt(0), Integer.parseInt(textoEdad.getText()), choiceSintoma.getValue());
             Paciente.guardarPaciente(paciente);
-            Main.getConsultorio().agregarPaciente(paciente);
-            paciente.setTurno(String.valueOf(Main.getAtendidos())+paciente.getSintoma().getPrioridad());
-            /*
-            if (!comprobarSala1())
-            {
-                Main.setPacienteSala1(paciente);
-                //MenuPrincipalController.turno1.setText("00");
-                System.out.println(paciente.getTurno());
-            }
-            else if (!comprobarSala2())
-            {
-                Main.setPacienteSala2(paciente);
-                //MainVideo.setTurno2(paciente.getTurno());
+            PaginaPrincipalController.getConsultorio().agregarPaciente(paciente);
+            //paciente.setTurno(String.valueOf(MainPrincipal.getAtendidos())+paciente.getSintoma().getPrioridad());
+            this.setTurn(this.getTurn() + 1);
+            paciente.setTurno(String.valueOf(this.getTurn()));
+            /**if (PaginaPrincipalController.consultorio.getColaPacientes().isEmpty()) {
 
-            }
-            */
+            } else if (PaginaPrincipalController.consultorio.getColaPacientes().size() == 1) {
+                //Label lbl=new Label(PaginaPrincipalController.consultorio.getColaPacientes().peek().getTurno());
+                temporal.getTurno1().setText(PaginaPrincipalController.consultorio.getColaPacientes().peek().getTurno());// = new Label(PaginaPrincipalController.consultorio.getColaPacientes().peek().getTurno());
+
+                //pane.getChildren().add(lbl);//add(lbl, 0, 1);
+                //pane_abajo.getChildren().add(pane);
+                //turno1.setText(PaginaPrincipalController.consultorio.getColaPacientes().peek().getTurno());
+                //turno1.setVisible(true);
+            } else {
+                Paciente tmp1 = PaginaPrincipalController.consultorio.getColaPacientes().poll();
+                Paciente tmp2 = PaginaPrincipalController.consultorio.getColaPacientes().poll();
+                temporal.getTurno1().setText(tmp1.getTurno());
+                temporal.getTurno2().setText(tmp2.getTurno());
+                PaginaPrincipalController.consultorio.agregarPaciente(tmp1);
+                PaginaPrincipalController.consultorio.agregarPaciente(tmp2);
+            }*/
+            temporal.modificarTurnos();
             regresarAMenuPrincipal(event);
         }
     }
@@ -127,23 +136,34 @@ public class AgregarPacienteController implements Initializable {
         }
         return true;
     }
-/*
-    private boolean comprobarSala1()
-    {
-        if(Main.getPacienteSala1() == null)
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        listaSintomas = Sintoma.readFromFile("sintomas.txt");
+        for(Sintoma sintoma : listaSintomas)
         {
-            return false;
+            this.choiceSintoma.getItems().add(sintoma);
         }
-        return true;
+        this.choiceGenero.getItems().addAll("H", "M");
+        labelError.setVisible(false);
+        labelError.setTextFill(Color.RED);
+    }
+    
+    public static Stage getStage1() {
+        return stage1;
     }
 
-    private boolean comprobarSala2()
-    {
-        if(Main.getPacienteSala2() == null)
-        {
-            return false;
-        }
-        return true;
+    public static void setStage1(Stage stage1) {
+        AgregarPacienteController.stage1 = stage1;
     }
-*/
+    
+    
+    public int getTurn() {
+        return turn;
+    }
+
+    public void setTurn(int turn) {
+        this.turn = turn;
+    }
+    
 }

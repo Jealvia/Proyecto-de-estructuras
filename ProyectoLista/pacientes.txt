@@ -66,3 +66,66 @@ Cedula: 1234567890, Nombre: primero, Apellido: sad, Genero: M, Edad: 2, Sintoma:
 Cedula: 1804563052, Nombre: Ultimo, Apellido: asd, Genero: M, Edad: 12, Sintoma: dolor de cabeza, Prioridad: 5
 Cedula: 1804563052, Nombre: asd, Apellido: sad, Genero: M, Edad: 324, Sintoma: ﻿vomito, Prioridad: 1
 Cedula: 0925682551, Nombre: mnbvc , Apellido: mbnv dfgfg, Genero: H, Edad: 12, Sintoma: fiebre, Prioridad: 0
+Cedula: 0925682551, Nombre: fgdgdfg, Apellido: rewert, Genero: H, Edad: 17, Sintoma: hemorragia, Prioridad: 0
+Cedula: 0925682552, Nombre: rertert, Apellido: fgdfgdf, Genero: M, Edad: 29, Sintoma: hemorragia, Prioridad: 0
+Cedula: 0925682553, Nombre: fgdfg, Apellido: hgfcvsss, Genero: M, Edad: 30, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0925682551, Nombre: jhgfds, Apellido: kjhgfd, Genero: H, Edad: 56, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0925682555, Nombre: ,mnbvc, Apellido: hghtjy, Genero: H, Edad: 25, Sintoma: hemorragia, Prioridad: 0
+Cedula: 0925682551, Nombre: dsfsdfd sdfds, Apellido: dfdfb fdgdf, Genero: M, Edad: 23, Sintoma: fiebre, Prioridad: 0
+Cedula: 0925682551, Nombre: gfgfgh, Apellido: fghfg, Genero: M, Edad: 32, Sintoma: resfrio, Prioridad: 3
+Cedula: 0925682551, Nombre: ujhgf, Apellido: yutyuyt, Genero: M, Edad: 23, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0902836471, Nombre: drgfdfgd, Apellido: dfgdf, Genero: M, Edad: 23, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0973732338, Nombre: fdf sdfs, Apellido: dsfsdb sfdg, Genero: M, Edad: 23, Sintoma: hemorragia, Prioridad: 0
+Cedula: 0976483925, Nombre: dsf sdfds, Apellido: fdgfdg fdgdf, Genero: H, Edad: 34, Sintoma: congestion nasal, Prioridad: 3
+Cedula: 1234567890, Nombre: gfdcxcxcv, Apellido: gfg fgfgh, Genero: H, Edad: 23, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567891, Nombre: lkjhgf gfhfgh, Apellido: fgh ffghgfh, Genero: H, Edad: 34, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567895, Nombre: gfh gfhf, Apellido: hfgh ghfgh, Genero: H, Edad: 45, Sintoma: fiebre, Prioridad: 0
+Cedula: 0354665776, Nombre: ffgfh ghgfh, Apellido: gfh gfhfgh, Genero: H, Edad: 34, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567897, Nombre: hg fhfg, Apellido: fgh fghfghf, Genero: H, Edad: 34, Sintoma: congestion nasal, Prioridad: 3
+Cedula: 0234457687, Nombre: sdf fsdf, Apellido: dsf dsfsdf, Genero: H, Edad: 23, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567892, Nombre: ffdg dfgdfg, Apellido: fg dfg gd, Genero: M, Edad: 23, Sintoma: resfrio, Prioridad: 3
+Cedula: 1234567896, Nombre: ffgh fghf, Apellido: gfh fghfgh, Genero: M, Edad: 34, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567785, Nombre: dg dfgdfg, Apellido: fdg dfgdfg, Genero: M, Edad: 34, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567894, Nombre: sdfsd, Apellido: dsfsdf, Genero: M, Edad: 45, Sintoma: fiebre, Prioridad: 0
+Cedula: 1234567895, Nombre: dgd fdgdfg, Apellido: erter tyrty, Genero: M, Edad: 34, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567895, Nombre: sdfsd fsdfsdf, Apellido: fdg dfgdfg, Genero: M, Edad: 45, Sintoma: fiebre, Prioridad: 0
+Cedula: 1234567894, Nombre: dfgd dfgd, Apellido: dfgdfgfd fdgfdg, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567894, Nombre: fdgdf dfdfgdfg, Apellido: dfgfd fdgfdg, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567895, Nombre: gr ger gerg, Apellido: d gegr erg, Genero: M, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567896, Nombre: trhvrt hgfh, Apellido:  fghfffgh gfh, Genero: M, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567897, Nombre: sfsdf sdfs, Apellido:  sdf sfdsf, Genero: M, Edad: 34, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567895, Nombre: sdf sdfsd d, Apellido: sdf dsfsdf, Genero: H, Edad: 45, Sintoma: congestion nasal, Prioridad: 3
+Cedula: 1234567896, Nombre: dg dffgd, Apellido: ffdgd  dfgdf, Genero: M, Edad: 45, Sintoma: fiebre, Prioridad: 0
+Cedula: 1234567896, Nombre: hggf fgh , Apellido: fghfgh, Genero: M, Edad: 36, Sintoma: dolor de cabeza, Prioridad: 5
+Cedula: 1234567895, Nombre: dsf sdfsd, Apellido:  dsf dsfdsdf, Genero: H, Edad: 35, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567898, Nombre: dfg dfgdfg, Apellido:  dfgdfg dfgdfg, Genero: H, Edad: 25, Sintoma: congestion nasal, Prioridad: 3
+Cedula: 1234567896, Nombre: fg dfgfdg, Apellido: df dfgfdg, Genero: H, Edad: 56, Sintoma: fiebre, Prioridad: 0
+Cedula: 1234567890, Nombre: dfghhj hgjgjghj, Apellido: ghjhgj hghjghj, Genero: H, Edad: 56, Sintoma: congestion nasal, Prioridad: 3
+Cedula: 1234567896, Nombre: erwer werwe , Apellido: ewr werwer, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0925682551, Nombre: dfdfgfd dfgdfg, Apellido: fdgdfg gvcb, Genero: H, Edad: 56, Sintoma: congestion nasal, Prioridad: 3
+Cedula: 1234567898, Nombre: fffffffffff fff, Apellido: dfger ertert, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0432145688, Nombre: tttttttttttttt tt, Apellido: sdfs  ergfd, Genero: H, Edad: 65, Sintoma: congestion nasal, Prioridad: 3
+Cedula: 1234567890, Nombre: rrrrrrrrr t ytyh, Apellido: yyyyyyy fghf gh, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1111111225, Nombre: bbbbbbbb fghf, Apellido: f fg hhr, Genero: M, Edad: 56, Sintoma: fiebre, Prioridad: 0
+Cedula: 1111111111, Nombre: oooooo tf   fgh, Apellido: fgdfdf dhffghfgh, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567890, Nombre: eeeeeeeeeee cxfdsf, Apellido: dsf sd fsdf, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1111111112, Nombre: sdf sdsdfsdsgd, Apellido: fdgd fgdfg, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567890, Nombre: fggggggfgh h hfg f, Apellido:  fghfg hfgh fgh fg, Genero: H, Edad: 23, Sintoma: fiebre, Prioridad: 0
+Cedula: 1234567891, Nombre: ddgdg dfg dfg, Apellido: df df h gfh, Genero: H, Edad: 45, Sintoma: congestion nasal, Prioridad: 3
+Cedula: 1234567890, Nombre: dfgdfgdg dfgdf, Apellido: dfg df fdgdfg, Genero: H, Edad: 34, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567891, Nombre: dfgd ttgdfgfd, Apellido: fdg dgfgfd, Genero: M, Edad: 45, Sintoma: resfrio, Prioridad: 3
+Cedula: 0987654321, Nombre: sdfsfsd sdfdsf, Apellido: sd sfd dfs, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0987654323, Nombre: dfdfgdfgdfg , Apellido: fdg dfgdfgf, Genero: M, Edad: 34, Sintoma: resfrio, Prioridad: 3
+Cedula: 0987654321, Nombre: dsf ddsfsdf, Apellido: dsf sdfsd, Genero: M, Edad: 45, Sintoma: fiebre, Prioridad: 0
+Cedula: 1234567890, Nombre: sdfsds dgdfgd, Apellido: f df gdfgd, Genero: M, Edad: 34, Sintoma: fiebre, Prioridad: 0
+Cedula: 0987654321, Nombre: dfgfgfd dfgdgf, Apellido:  dfgdfgdfg, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 0987654321, Nombre: dfdfgfd fdgdfg, Apellido: fd dffdgdfg, Genero: M, Edad: 45, Sintoma: fiebre, Prioridad: 0
+Cedula: 1234567890, Nombre: dsfdfgd fdgdfg, Apellido: dfg dfgdfg, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567890, Nombre: dsfsdf sdfsdf, Apellido:  sdfds sdfsdf, Genero: M, Edad: 45, Sintoma: fiebre, Prioridad: 0
+Cedula: 1234567890, Nombre: sdgdff ffghfgh, Apellido: gfh fghfgh , Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567890, Nombre: dsfsfsd sdfsdf, Apellido: dfsdf sdfsdf, Genero: M, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567890, Nombre: dfgdfg fdgdfg, Apellido: dfgdfg dfgdfg, Genero: H, Edad: 56, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567890, Nombre: ddgfg dfgdfg, Apellido:  fgdfgd dfgdfg, Genero: H, Edad: 54, Sintoma: fiebre, Prioridad: 0
+Cedula: 1234567890, Nombre:  sdsdfsdf sdfsdf, Apellido: sdfdsf dsfsdf, Genero: M, Edad: 56, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567890, Nombre: sdfsdf dsfsdf, Apellido: sd fs sdfsdf, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1
+Cedula: 1234567890, Nombre: dfdfgdfg fdgdfg, Apellido:  dfgdfgdfg dfgdfg, Genero: H, Edad: 45, Sintoma: ﻿vomito, Prioridad: 1

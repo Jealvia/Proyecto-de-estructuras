@@ -3,8 +3,6 @@ package espol.edu.ec.Objetos;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * Created by User on 01/07/2017.

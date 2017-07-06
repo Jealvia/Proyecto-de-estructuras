@@ -17,6 +17,7 @@ public class Main extends Application {
     public void start(Stage primaryStage)  throws Exception{
         consultorio = new Consultorio();
         ultimoConsultorio = 2;
+        
         Parent root = FXMLLoader.load(getClass().getResource("MenuPrincipal.fxml"));
         primaryStage.setTitle("Menu Principal");
         primaryStage.setScene(new Scene(root, 407, 220));

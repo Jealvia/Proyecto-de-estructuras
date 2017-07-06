@@ -143,7 +143,7 @@ public class MenuPrincipalController implements Initializable{
         rightPane.add(consultorio,1,0,1,1);
         rightPane.add(consultorio1,1,1,1,1);
         rightPane.add(consultorio2,1,2,1,1);
-
+        
         backPane.add(videoPane, 0, 0, 1, 1);
         backPane.add(rightPane,1,0,1,1);
         //ColumnConstraints halfConstraint = ColumnConstraintsBuilder.create().percentWidth(50).build();
@@ -161,18 +161,21 @@ public class MenuPrincipalController implements Initializable{
         mediaPlayerActual = (MediaPlayer)playlist.getLista().next();
         for(int i = 0; i <playlist.getLista().size(); i++)
         {
+            
             nextPlayer = (MediaPlayer)playlist.getLista().next();
             mediaPlayerActual.setOnEndOfMedia(new Runnable() {
                 @Override
                 public void run() {
+                    playerActual=mv.getMediaPlayer();//.setMediaPlayer(nextPlayer);
+                    nextPlayer = (MediaPlayer)playlist.getLista().next();
                     mv.setMediaPlayer(nextPlayer);
                     nextPlayer.play();
                 }
             });
-            System.out.println("Actual"+mediaPlayerActual);
-            System.out.println("Siguiente: "+nextPlayer);
-            mediaPlayerActual = nextPlayer;
-            System.out.println("ActualDespuesC: "+mediaPlayerActual);
+            //System.out.println("Actual"+mediaPlayerActual);
+            //System.out.println("Siguiente: "+nextPlayer);
+            //mediaPlayerActual = nextPlayer;
+            //System.out.println("ActualDespuesC: "+mediaPlayerActual);
         }
         /*
         nextPlayer = (MediaPlayer) playlist.getLista().next();

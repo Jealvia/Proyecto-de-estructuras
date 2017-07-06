@@ -62,12 +62,7 @@ public class MainVideo extends Application {
         final Playlist playlist = new Playlist("media.txt");
         mediaPlayerActual = (MediaPlayer)playlist.getLista().next();
         mv = new MediaView(mediaPlayerActual);
-
-
-        //DoubleProperty width = mv.fitWidthProperty();
-        //DoubleProperty height = mv.fitHeightProperty();
-        //width.bind(Bindings.selectDouble(mv.sceneProperty(), "width"));
-        //height.bind(Bindings.selectDouble(mv.sceneProperty(), "height"));
+        
         Pane videoPane = new Pane();
         videoPane.getChildren().add(mv);
         videoPane.setStyle("-fx-background-color: #333333");
@@ -95,13 +90,7 @@ public class MainVideo extends Application {
 
         backPane.add(videoPane, 0, 0, 1, 1);
         backPane.add(rightPane,1,0,1,1);
-        //ColumnConstraints halfConstraint = ColumnConstraintsBuilder.create().percentWidth(50).build();
-        //backPane.getColumnConstraints().addAll(halfConstraint, halfConstraint);
-
-
         Scene scene = new Scene(backPane, 1500,600);
-        //videoPane.setMaxHeight((scene.getHeight())/2);
-        //videoPane.setMaxWidth((scene.getWidth())/2);
 
         primaryStage.setScene(scene);
         primaryStage.show();
@@ -117,24 +106,8 @@ public class MainVideo extends Application {
                     }
                 });
             
-                System.out.println(i);
-            /*System.out.println("Actual"+mediaPlayerActual);
-            System.out.println("Siguiente: "+nextPlayer);
-            mediaPlayerActual = nextPlayer;
-            System.out.println("ActualDespuesC: "+mediaPlayerActual);*/
         }
-        /*
-        nextPlayer = (MediaPlayer) playlist.getLista().next();
-        mediaPlayerActual.setOnEndOfMedia(new Runnable() {
-            @Override
-            public void run() {
-                mv.setMediaPlayer(nextPlayer);
-                nextPlayer.play();
-                mediaPlayerActual = nextPlayer;
-            }
-        });
-        */
-
+     
         mv.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
@@ -150,20 +123,6 @@ public class MainVideo extends Application {
 
         mv.setMediaPlayer(mediaPlayerActual);
         mv.getMediaPlayer().play();
-
-
-        /*
-        for (int i = 1; i<5; i++)
-        {
-            String secondPath = "src/media/vid00"+i+".mp4";
-            media = new Media(Paths.get(secondPath).toUri().toString());
-            mp = new MediaPlayer(media);
-            mv = new MediaView(mp);
-            mp.setAutoPlay(true);
-            TimeUnit.MILLISECONDS.sleep(1000);
-        }
-        */
-
 
 
     }

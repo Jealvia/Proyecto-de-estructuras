@@ -20,6 +20,11 @@ public class Paciente {
         this.genero = genero;
         this.edad = edad;
         this.sintoma = sintoma;
+        
+    }
+
+    public Paciente() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getNombre() {
