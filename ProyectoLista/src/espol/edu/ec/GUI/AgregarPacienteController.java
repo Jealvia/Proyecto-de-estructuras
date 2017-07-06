@@ -68,7 +68,7 @@ public class AgregarPacienteController implements Initializable {
             Paciente paciente = new Paciente(textoCedula.getText(), textoNombre.getText(), textoApellido.getText(),
                     choiceGenero.getValue().charAt(0), Integer.parseInt(textoEdad.getText()), choiceSintoma.getValue());
             Paciente.guardarPaciente(paciente);
-            PaginaPrincipalController.getConsultorio().agregarPaciente(paciente);
+            PaginaPrincipalController.consultorio.agregarPaciente(paciente);
             //paciente.setTurno(String.valueOf(MainPrincipal.getAtendidos())+paciente.getSintoma().getPrioridad());
             this.setTurn(this.getTurn() + 1);
             paciente.setTurno(String.valueOf(this.getTurn()));

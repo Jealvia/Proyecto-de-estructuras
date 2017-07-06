@@ -35,15 +35,24 @@ import javafx.stage.Stage;
  */
 public class PaginaPrincipalController implements Initializable {
 
-    @FXML private  Label turno1;//=new Label();
-    @FXML private  Label turno2;//=new Label();
-    @FXML private  Label sala1_lbl=new Label();
-    @FXML private  Label sala2_lbl=new Label();
-    @FXML private MediaView media;
-    @FXML private Button agregar_paciente;
-    @FXML private Button sala1;
-    @FXML private Button sala2;
-    @FXML private GridPane pane;
+    @FXML 
+    private  Label turno1;//=new Label();
+    @FXML 
+    private  Label turno2;//=new Label();
+    @FXML 
+    private  Label sala1_lbl=new Label();
+    @FXML 
+    private  Label sala2_lbl=new Label();
+    @FXML 
+    private MediaView media;
+    @FXML 
+    private Button agregar_paciente;
+    @FXML 
+    private Button sala1;
+    @FXML 
+    private Button sala2;
+    @FXML 
+    private GridPane pane;
     private static MediaPlayer mediaPlayerActual;
     private static MediaPlayer nextPlayer;
     private static MediaPlayer playerActual;
@@ -117,7 +126,7 @@ public class PaginaPrincipalController implements Initializable {
             
         } else if(PaginaPrincipalController.consultorio.getColaPacientes().size() == 1){
             //Label lbl=new Label(PaginaPrincipalController.consultorio.getColaPacientes().peek().getTurno());
-            turno1=new Label(PaginaPrincipalController.consultorio.getColaPacientes().peek().getTurno());
+            turno1 = new Label(PaginaPrincipalController.consultorio.getColaPacientes().peek().getTurno());
             
             //pane.getChildren().add(lbl);//add(lbl, 0, 1);
             //pane_abajo.getChildren().add(pane);
