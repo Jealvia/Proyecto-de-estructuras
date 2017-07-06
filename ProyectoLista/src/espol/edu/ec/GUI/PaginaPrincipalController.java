@@ -180,6 +180,8 @@ public class PaginaPrincipalController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        //SI QUIERES QUE EL VIDEO SE REPRODUSCA QUITA EL COMENTARIO DE ABAJO Y PON EN LA CARPETA SRC EL MEDIA
+        //QUE ENVIO JUAN
         //inicializar();
         
     }

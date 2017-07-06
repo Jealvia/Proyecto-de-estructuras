@@ -17,7 +17,6 @@ import javafx.scene.layout.VBox;
 import Model.Operaciones;
 import Persistencia.Util;
 import java.io.IOException;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
