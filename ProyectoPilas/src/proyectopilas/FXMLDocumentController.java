@@ -5,6 +5,8 @@
  */
 package proyectopilas;
 
+import Model.Memoria;
+import Model.Operaciones;
 import Persistencia.Util;
 import java.io.IOException;
 import java.net.URL;
@@ -54,6 +56,10 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void ejecutar(ActionEvent event) throws IOException {
         System.out.println("Ejecutar");
+        Operaciones.loadingOp();
+        Memoria.loadMemory();
+        Memoria m = new Memoria();
+        FXMLModificarController.lista_memoria = m.llenarMemoria();
         ((Node)(event.getSource())).getScene().getWindow().hide();
         Parent root = FXMLLoader.load(getClass().getResource("FXMLEjecutar.fxml"));
         Stage stage=new Stage(); 
