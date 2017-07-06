@@ -58,9 +58,9 @@ public class PaginaPrincipalController implements Initializable {
     @FXML 
     private GridPane pane;
     @FXML
-    private VBox box1;
+    public VBox box1 = new VBox();
     @FXML
-    private VBox box2;
+    public VBox box2 = new VBox();
     private static MediaPlayer mediaPlayerActual;
     private static MediaPlayer nextPlayer;
     private static MediaPlayer playerActual;

@@ -7,4 +7,3 @@ POP,X,5
 DIV,,4
 SUB,,3
 PUSH,A,2
-POP,H,3

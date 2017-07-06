@@ -174,3 +174,5 @@ Cedula: 0930432372, Nombre: asdadw, Apellido: adawfwfwfw, Genero: H, Edad: 20, S
 Cedula: 0930432372, Nombre: adafawf, Apellido: afwfwf, Genero: H, Edad: 20, Sintoma: ﻿vomito, Prioridad: 1
 Cedula: 0930432372, Nombre: adawfafwf, Apellido: grgrrsge, Genero: H, Edad: 30, Sintoma: ﻿vomito, Prioridad: 1
 Cedula: 0930432372, Nombre: aaaaadadaa, Apellido: efefefefe, Genero: H, Edad: 50, Sintoma: fiebre, Prioridad: 0
+Cedula: 0930432372, Nombre: affawfw, Apellido: afafwfwfwaf, Genero: H, Edad: 20, Sintoma: fiebre, Prioridad: 0
+Cedula: 0930432372, Nombre: adwdwdwd, Apellido: ffffeafaf, Genero: H, Edad: 53, Sintoma: fiebre, Prioridad: 0
