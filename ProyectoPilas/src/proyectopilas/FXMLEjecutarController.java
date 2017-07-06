@@ -18,10 +18,12 @@ import Model.Operaciones;
 import Persistencia.Util;
 import java.io.IOException;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 
@@ -48,6 +50,13 @@ public class FXMLEjecutarController implements Initializable {
     public void siguienteOp (ActionEvent event) {
         System.out.println("Siguiente");
         Label lbl = new Label();
+        lbl.setStyle("-fx-background-color: #fa8536;");
+        lbl.setTextFill(Color.WHITE);
+        lbl.setMinWidth(100);
+        lbl.setMinHeight(30);
+        lbl.setMaxWidth(100);
+        lbl.setMaxHeight(30);
+        lbl.setAlignment(Pos.CENTER);
         Operaciones op = Operaciones.operaciones.poll();
         if (op != null) {
             instruccion.setText(op.getInstruccion().getValue());
